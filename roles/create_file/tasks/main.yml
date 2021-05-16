@@ -1,0 +1,5 @@
+---
+
+- name: create empty file
+  file: path=/home/file1 state=touch  mode=0500
+# tasks file for create_file

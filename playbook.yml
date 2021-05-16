@@ -1,0 +1,8 @@
+---
+- name: Show info
+  hosts: all
+  become: yes
+
+  roles:
+    - { role: create_file  }
+    - { role: system_info  }

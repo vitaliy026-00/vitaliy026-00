@@ -1,0 +1,9 @@
+---
+- name: Distribution
+  debug: 
+    msg: "{{ hostvars[inventory_hostname].ansible_distribution }}"
+- name: Version
+  debug: 
+    msg: "{{ hostvars[inventory_hostname].ansible_distribution_version }}"
+
+# tasks file for system_info
