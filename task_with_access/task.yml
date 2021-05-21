@@ -1,0 +1,16 @@
+---
+- name: config | Configuring Allow Access
+  template:
+    src: "templates/hosts.allow.j2"
+    dest: "/templates/hosts.allow"
+    group: "root"
+    owner: "root"
+    mode: "u=rw,g=r,o=r"
+
+- name: config | Configuring Deny Access
+  template:
+    src: "templates/hosts.deny.j2"
+    dest: "/templates/hosts.deny"
+    group: "root"
+    owner: "root"
+    mode: "u=rw,g=r,o=r"
